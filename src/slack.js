@@ -31,7 +31,7 @@ module.exports.notify = function(restaurants) {
 function createContentFrom(restaurants) {
   return {
     'text'       : { toString: () => '' }, // only way to have no text without attachment fallback
-    'channel'    : config.get('slack.channel'),
+    'channel'    : config.has('slack.channel') ? config.get('slack.channel') : undefined,
     'username'   : config.get('slack.username'),
     'icon_emoji' : config.get('slack.icon_emoji'),
     'attachments': restaurants.map(restaurant => (

@@ -3,7 +3,7 @@ slack:
   username   : 'LunchHunter' # the username that the menus will be posted with
   icon_emoji : ':fork_and_knife:' # the icon that is used for messages
   fallback: Today's Menus # is shown in slack notification instead of content of attached menus
-  channel: '#random' # slack channel to post to
+  #channel: '#lunch' # optionally overwrite slack channel of webhook
 # Restaurant configs
 restaurants:
   - name: Swisscom Restaurant Binz
