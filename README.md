@@ -47,7 +47,7 @@ Memory size limit is set to the lowest value of 128MB.
 ## Supported Websites
  - [Binz38](http://www.binz-38.ch/)
  - [SV Restaurants](http://www.sv-restaurant.ch/)
- - [ZVF Cantines](https://zfv.ch/de/betriebe/personalrestaurants)
+ - [ZFV Cantines](https://zfv.ch/de/betriebe/personalrestaurants)
 
 Feel free to fork this project and write your own parser for your favourite cantine or restaurant website.
 
