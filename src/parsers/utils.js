@@ -10,6 +10,6 @@ module.exports.removeWhitespace = function(string) {
     .replaceAll('\r', '')
     .replaceAll('\n', ' ')
     .replaceAll('\t', '')
-    .replaceAll('  ', ' ')
+    .replaceAll('\\s+', ' ')
     .trim();
 }
