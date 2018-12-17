@@ -10,7 +10,7 @@ module.exports = {
    * @return array of offers
    */
   parse: function(html) {
-    let offers = $.load(html)('.offer').toArray();
+    let offers = $.load(html)('#menu-plan-tab1 .menu-item').toArray();
 
     return offers.map(offer => (
       {
@@ -22,13 +22,11 @@ module.exports = {
 }
 
 function prepareTitle(offer) {
-  return utils.removeWhitespace($(offer).find('.offer-description').text());
+  return utils.removeWhitespace($(offer).find('.menu-title').text());
 }
 
 function prepareDescription(offer) {
-  return utils.removeWhitespace(
-    $(offer).find('.maindish .title').text()) + ' \u2014 '
-    + utils.removeWhitespace($(offer).find('.maindish .trimmings').text()).replace(/\sMit/, '\nMit') + '\n'
-    + '_' + $(offer).find('.price').text() + '_';
+  return $(offer).find('.menu-description').text() + '\n' +
+    '_' + utils.removeWhitespace($(offer).find('.price').text()) + '_';
 }
 
