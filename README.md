@@ -45,7 +45,6 @@ For testing purposes the main Lambda function can be triggered via API Gateway (
 Memory size limit is set to the lowest value of 128MB.
 
 ## Supported Websites
- - [Binz38](http://www.binz-38.ch/)
  - [SV Restaurants](http://www.sv-restaurant.ch/)
  - [ZFV Cantines](https://zfv.ch/de/betriebe/personalrestaurants)
 
