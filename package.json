@@ -1,6 +1,6 @@
 {
   "name": "serverless-slack-lunch-hunter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Serverless cron script, posts lunch menus to Slack webhook.",
   "author": "Alexander Mülli",
   "license": "MIT",
@@ -12,6 +12,7 @@
     "test": "mocha test"
   },
   "dependencies": {
+    "btoa": "^1.2.1",
     "cheerio": "^0.22.0",
     "config": "^1.24.0",
     "dotenv": "^2.0.0",

@@ -6,15 +6,12 @@ slack:
   #channel: '#lunch' # optionally overwrite slack channel of webhook
 # Restaurant configs
 restaurants:
-  - name: Swisscom Restaurant Binz
-    url : http://swisscom-binz.sv-restaurant.ch/de.html
-    color: '#173B81'
+  - name: UBS Restaurant Flurhof
+    url : https://ubs-flur.sv-restaurant.ch/en/menu/restaurant-flurhof/
     parser: ./parsers/svrestaurant
-  - name: Swiss Life Restaurant Binz49
-    url : https://zfv.ch/de/microsites/swiss-life-restaurant-binz49/menueplan
-    color: '#d82034'
-    parser: ./parsers/zfv
-  - name: Binz 38
-    url : http://www.binz-38.ch/home/
-    color: '#ec6730'
-    parser: ./parsers/binz38
+    color: '#e60100'
+  - name: Siemens Cube
+    url: https://clients.eurest.ch/cube/de/Food%20Court
+    client: ./clients/eurest
+    id : 289
+    color: '#009999'

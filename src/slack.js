@@ -40,14 +40,19 @@ function createContentFrom(restaurants) {
         'fallback'  : config.get('slack.fallback'),
         'color'     : restaurant.color,
         'mrkdwn_in' : ['text', 'pretext', 'fields'],
-        'fields'    : restaurant.offers.map(offer => (
+        'fields'    : restaurant.offers.length > 0 ? restaurant.offers.map(offer => (
           {
             'title' : offer.title,
             'value' : offer.description,
             'short' : true,
           }
-        )),
-        'footer': restaurant.parser.name,
+        )) : [
+          {
+            'value' : '_no offers found for today_ :man-shrugging:',
+            'short' : true,
+          }
+        ],
+        'footer': (restaurant.parser || restaurant.client).name,
         'ts': Math.round((new Date).getTime() / 1000)
       }
     ))

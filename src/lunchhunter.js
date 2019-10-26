@@ -7,7 +7,7 @@ class LunchHunter {
   run() {
     // instantiate restaurants from config
     let restaurants = config.get('restaurants').map(
-      config => new Restaurant(config.name, config.url, config.color, config.parser)
+      config => new Restaurant(config.name, config.url, config.parser, config.client, config.id, config.color)
     );
 
     // fetch today's offers for all restaurants

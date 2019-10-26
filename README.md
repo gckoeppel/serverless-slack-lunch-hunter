@@ -48,7 +48,7 @@ Memory size limit is set to the lowest value of 128MB.
  - [SV Restaurants](http://www.sv-restaurant.ch/)
  - [ZFV Cantines](https://zfv.ch/de/betriebe/personalrestaurants)
 
-Feel free to fork this project and write your own parser for your favourite cantine or restaurant website.
+Feel free to fork this project and write your own parser or api client for your favourite cantine or restaurant website.
 
 
 ## Credits
