@@ -1,7 +1,6 @@
 # Slack Lunch Hunter
 
 [![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
-[![Build Status](https://travis-ci.org/amuelli/serverless-slack-lunch-hunter.svg?branch=master&style=flat-square)](https://travis-ci.org/amuelli/serverless-slack-lunch-hunter)
 [![license](https://img.shields.io/github/license/amuelli/serverless-slack-lunch-hunter.svg)]()
 
 This is a simple Serverless project with a single AWS Lambda function to scrap daily lunch menus and post them to a slack channel.
@@ -24,7 +23,7 @@ This is a simple Serverless project with a single AWS Lambda function to scrap d
   ```shell
   node run.js
   ```
-  ![Demo of the Slack integration](http://i.imgur.com/b5p2Ye5.png)
+  ![Demo of the Slack integration](https://imgur.com/a/9cyhkUs)
 
 ## Deploy with Serverless
 Although you can run the lunch hunter locally on your machine or on any server with node.js and a cron job, this project is meant to be run as a Lambda function on AWS and deployed through the serverless framework.
