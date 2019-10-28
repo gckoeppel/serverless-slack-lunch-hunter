@@ -23,7 +23,7 @@ This is a simple Serverless project with a single AWS Lambda function to scrap d
   ```shell
   node run.js
   ```
-  ![Demo of the Slack integration](https://imgur.com/a/9cyhkUs)
+  ![Demo of the Slack integration](https://i.imgur.com/g6bOOdC.png)
 
 ## Deploy with Serverless
 Although you can run the lunch hunter locally on your machine or on any server with node.js and a cron job, this project is meant to be run as a Lambda function on AWS and deployed through the serverless framework.
