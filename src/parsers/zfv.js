@@ -27,10 +27,12 @@ function prepareTitle(offer) {
   return utils.removeWhitespace($(offer).find('td:first-child').text())
 }
 
-function prepareDescription(offer) {
+function prepareDescription(offer) { 
+  $(offer).find('td:last-child').find('.txt-hold').find('.txt-slide').remove()
+  $(offer).find('td:last-child').find('.txt-hold').find('.link').remove()
   return entities.decode(
     utils.removeWhitespace(
-      $(offer).find('td:last-child').html()
+      $(offer).find('td:last-child').find('.txt-hold').html()
     )
     .replace(/(Fleisch|Fisch): \w+.*<br>/, '') // remove provenance for the sake of brevity
     .replace(/CHF.*/g, '\_$&\_')               // make price italic

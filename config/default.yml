@@ -1,17 +1,25 @@
 # Slack configs
-slack: 
-  username   : 'LunchHunter' # the username that the menus will be posted with
-  icon_emoji : ':fork_and_knife:' # the icon that is used for messages
-  fallback: Today's Menus # is shown in slack notification instead of content of attached menus
+#slack: 
+#  username   : 'LunchHunter' # the username that the menus will be posted with
+#  icon_emoji : ':fork_and_knife:' # the icon that is used for messages
+#  fallback: Today's Menus # is shown in slack notification instead of content of attached menus
   #channel: '#lunch' # optionally overwrite slack channel of webhook
+# Microsoft teams configs
+teams:
 # Restaurant configs
 restaurants:
-  - name: UBS Restaurant Flurhof
-    url : https://ubs-flur.sv-restaurant.ch/en/menu/restaurant-flurhof/
+  - name: Swisscom
+    url : https://swisscom-binz.sv-restaurant.ch/de/menuplan/
     parser: ./parsers/svrestaurant
     color: '#e60100'
-  - name: Siemens Cube
-    url: https://clients.eurest.ch/cube/de/Food%20Court
-    client: ./clients/eurest
-    id : 289
+    image: https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Swisscom_logo.svg/150px-Swisscom_logo.svg.png
+  - name: SwissLife
+    url: https://zfv.ch/en/microsites/swiss-life-restaurant-binz49/menu-plan
+    parser: ./parsers/zfv
     color: '#009999'
+    image: https://upload.wikimedia.org/wikipedia/en/thumb/9/93/Swiss_Life.svg/220px-Swiss_Life.svg.png
+#  - name: Binz 38
+#    url: https://www.binz-38.ch/
+#    parser: ./parsers/binz38
+#    color: '#009999'
+    

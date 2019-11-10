@@ -4,7 +4,7 @@ const rp = require('request-promise-native');
 const client = require('./clients/eurest');
 
 class Restaurant {
-  constructor(name, url, parser, client, id, color) {
+  constructor(name, url, parser, client, id, color, image) {
     this.name = name;
     this.url = url;
     this.color = color;
@@ -13,6 +13,9 @@ class Restaurant {
       this.id = id;
     } else if(parser) {
       this.parser = require(parser);
+    }
+    if(image) {
+      this.image = image
     }
   }
 
