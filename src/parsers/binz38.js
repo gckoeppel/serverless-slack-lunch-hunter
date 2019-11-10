@@ -13,9 +13,9 @@ module.exports = {
 
     // find out the magic button string of today
     let magic = ""
-    //let today = new Date().getDate().toString()
+    let today = new Date().getDate().toString()
     // for debugging weekends: set date to a weekday
-    let today = 11
+    //let today = 11
     let buttons = $.load(html)('button').toArray();
     for (var i = 0; i < buttons.length; i++)
     {
@@ -26,7 +26,7 @@ module.exports = {
     }
     console.log(magic)
 
-    let offers = $.load(html)('.tabular__content .container [data-tabular=jzdsjo7wu] .paragraph').toArray()
+    let offers = $.load(html)(`.tabular__content .container [data-tabular=${magic}] .paragraph`).toArray()
     
     return offers.map(offer => (
       {
