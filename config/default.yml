@@ -18,8 +18,8 @@ restaurants:
     parser: ./parsers/zfv
     color: '#009999'
     image: https://upload.wikimedia.org/wikipedia/en/thumb/9/93/Swiss_Life.svg/220px-Swiss_Life.svg.png
-#  - name: Binz 38
-#    url: https://www.binz-38.ch/
-#    parser: ./parsers/binz38
-#    color: '#009999'
+  - name: Binz 38
+    url: https://www.binz-38.ch/
+    parser: ./parsers/binz38
+    color: '#009999'
     
