@@ -24,7 +24,6 @@ module.exports = {
         magic = buttons[i].attribs["data-tabular"]
       }
     }
-    console.log(magic)
 
     let offers = $.load(html)(`.tabular__content .container [data-tabular=${magic}] .paragraph`).toArray()
     

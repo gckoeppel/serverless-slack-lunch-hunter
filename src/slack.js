@@ -34,6 +34,7 @@ function createContentFrom(restaurants) {
     'username'   : config.get('slack.username'),
     'icon_emoji' : config.get('slack.icon_emoji'),
     'attachments': restaurants.map(restaurant => (
+      restaurant.Type == "Restaurant" ? 
       {
         'title'     : restaurant.name,
         'title_link': restaurant.url,
@@ -54,7 +55,7 @@ function createContentFrom(restaurants) {
         ],
         'footer': (restaurant.parser || restaurant.client).name,
         'ts': Math.round((new Date).getTime() / 1000)
-      }
+      } : console.log('Trucks not implemented for slack')
     ))
   };
 }

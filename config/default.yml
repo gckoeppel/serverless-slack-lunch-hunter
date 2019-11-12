@@ -22,4 +22,9 @@ restaurants:
     url: https://www.binz-38.ch/
     parser: ./parsers/binz38
     color: '#009999'
-    
+    image: https://www.binz-38.ch/uploads/1/2/5/2/125278187/editor/b38-logoneu_5.png
+trucks:
+  url : https://www.foodtrucks-schweiz.ch/trucks/stadt/food-trucks-zuerich-liste-tour-daten
+  center_lon : 47.3631073
+  center_lat : 8.5100626
+  distance : 3000

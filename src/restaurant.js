@@ -8,6 +8,7 @@ class Restaurant {
     this.name = name;
     this.url = url;
     this.color = color;
+    this.Type = "Restaurant"
     if(client) {
       this.client = require(client);
       this.id = id;
