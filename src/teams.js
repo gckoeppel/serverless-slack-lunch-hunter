@@ -61,3 +61,13 @@ function createContentFrom(promises) {
   };
 }
 
+// Array.flat() is not yet implemented everywhere, so we need our own .flat function
+// Source: https://stackoverflow.com/questions/50993498/flat-is-not-a-function-whats-wrong
+// Author: Ivan https://stackoverflow.com/users/6331369/ivan
+Object.defineProperty(Array.prototype, 'flat', {
+    value: function(depth = 1) {
+      return this.reduce(function (flat, toFlatten) {
+        return flat.concat((Array.isArray(toFlatten) && (depth>1)) ? toFlatten.flat(depth-1) : toFlatten);
+      }, []);
+    }
+});
